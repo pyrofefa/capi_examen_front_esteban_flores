@@ -1,0 +1,16 @@
+
+<table>
+    <tr>
+      <th>Nombre de usuario</th>
+      <th>Fecha de nacimiento</th>
+      <th>Edad</th>
+      <th>Dirección</th>	 
+    </tr>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{ usuario.name }}</td>
+      <td>{{ usuario.fecha_nacimento }}</td>
+      <td>{{ usuario.edad }}</td>
+      <td> {{ usuario.domicilio.domicilio }} No. {{ usuario.domicilio.numero_exterior }} </td>
+
+    </tr>
+</table>
